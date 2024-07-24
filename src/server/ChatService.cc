@@ -9,7 +9,7 @@ ChatService::ChatService()
 {
     if (_redis.connect())
     {
-        _redis.init_notify_handler(std::bind(ChatService::handlerRedisSubMsg, this, placeholders::_1, placeholders::_2));
+        _redis.init_notify_handler(std::bind(&ChatService::handlerRedisSubMsg, this, placeholders::_1, placeholders::_2));
     }
 
     // 注册登录事件的回调函数

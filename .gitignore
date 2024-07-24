@@ -1,0 +1,12 @@
+# 忽略所有 .log 文件
+*.log
+
+# 忽略特定目录
+tmp/
+!test/readme.md
+test/
+build/
+
+# 忽略所有 .txt 文件，除了 README.txt
+*.txt
+!README.txt
