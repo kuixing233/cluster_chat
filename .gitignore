@@ -3,8 +3,8 @@
 
 # 忽略特定目录
 tmp/
-!test/readme.md
 test/
+!test/readme.md
 build/
 
 # 忽略所有 .txt 文件，除了 README.txt
